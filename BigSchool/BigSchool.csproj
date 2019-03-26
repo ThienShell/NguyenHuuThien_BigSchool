@@ -205,9 +205,20 @@
     <Compile Include="Migrations\201903260217162_KhoiTaoModel.Designer.cs">
       <DependentUpon>201903260217162_KhoiTaoModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903260356366_CreateTableCourse.cs" />
+    <Compile Include="Migrations\201903260356366_CreateTableCourse.Designer.cs">
+      <DependentUpon>201903260356366_CreateTableCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903260358242_PopulateCategoryTable.cs" />
+    <Compile Include="Migrations\201903260358242_PopulateCategoryTable.Designer.cs">
+      <DependentUpon>201903260358242_PopulateCategoryTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -290,6 +301,15 @@
     <EmbeddedResource Include="Migrations\201903260217162_KhoiTaoModel.resx">
       <DependentUpon>201903260217162_KhoiTaoModel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903260356366_CreateTableCourse.resx">
+      <DependentUpon>201903260356366_CreateTableCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903260358242_PopulateCategoryTable.resx">
+      <DependentUpon>201903260358242_PopulateCategoryTable.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
